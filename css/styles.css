@@ -1,0 +1,283 @@
+.default-navbar
+{
+    /*background: linear-gradient(to right, #5ad6de, #48a3eb);*/
+    background: linear-gradient(to right,rgb(33, 216, 255), rgb(33, 162, 254));
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+
+.navbar-light .navbar-brand
+{
+    color: #fff;
+} 
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: #fff;
+    padding: 17px;
+    letter-spacing: 1px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* change color nav links */
+.navbar-nav .nav-item .nav-link
+{
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover
+{
+    color: rgb(33, 216, 255);
+    transition: all ease-in 0.3s;
+}
+
+#login-border
+{
+    border: 1px solid #fff;
+    border-radius: 3px;
+    width: 120px;
+    text-align: center;
+}
+
+/* gradient blue main section */
+.showcase-section
+{
+    background: linear-gradient(to right,rgb(34, 216, 255), rgb(33, 162, 254));
+    /*padding: 2em 15px;*/
+    padding-top: 20em;
+    padding-bottom: 3em;
+    color: #fff;
+}
+
+/* custom heading adjusts letter spacing on headings */
+.custom-heading
+{
+    letter-spacing: 2px;
+}
+
+/* less bold headings */
+.less-weight
+{
+    font-weight: 100;
+}
+
+.btn-get-started
+{
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(33, 162, 254);
+    font-weight: 500;
+}
+
+
+/* app factorie logo wrapper */
+.app-factorie-logo-wrapper img
+{
+    width: 100px;
+}
+/* app factorie phone wrapper */
+.app-phone-image
+{
+    /*margin-top: -180px;
+    margin-left: 70px;
+    margin-right: 70px;*/
+    margin-top: -164px;
+    margin-left: 100px;
+}
+
+/* app creation section */
+.app-creation-section
+{
+    /*margin-top: 3em;
+    margin-bottom: 5em;*/
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+/* app creation row */
+.app-creation-row
+{
+    text-align: center;
+    margin-top: 50px;
+    /*margin-left: -30px;
+    margin-right: -30px;*/
+}
+
+/* app creation headings */
+.app-creation-section h1
+{
+    font-size: 30px;
+}
+
+.app-creation-section h2
+{
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+.app-creation-row p
+{
+    font-size: 15px;
+    color: #4a4a4a;
+}
+.app-creation-row h4
+{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* media queries */
+@media(max-width: 768px)
+{
+
+    /* main section */
+    .showcase-section
+    {
+        padding-top: 10em;
+        padding-bottom: 2em;
+        text-align: center; /* experimental */
+    }
+
+    /* navbar */
+    .navbar-toggler-icon
+    {
+        background-image: url('../assets/hamburger.svg');
+    }
+
+    /* navbar */
+    .default-navbar
+    {
+        padding: 12px 5%;
+    }
+
+    /* remove navbar's border */
+    .navbar .navbar-toggler
+    {
+        border: none;
+        outline: none;
+    }
+
+    /* navbar links */
+    .navbar-expand-lg .navbar-nav .nav-link
+    {
+        padding-left: 0px;
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    
+    #login-border
+    {
+        border: none;
+        text-align: left;
+    }
+
+    /* headings */
+    .showcase-section h1
+    {
+        font-size: 25px;
+    }
+
+    .showcase-section h3
+    {
+        font-size: 22px;
+    }
+
+    /* adjust navbar links font sizes */
+    .navbar-light .navbar-nav .nav-link
+    {
+        font-size: 13px;
+
+    }
+
+    /* adjust main phone image */
+    .app-phone-image /* phone image wrapper */
+    {
+        margin-top: 22px;
+        margin-left: 25px;
+        margin-right: 10px;
+    }
+
+    /* app creation section */
+    .app-creation-section
+    {
+        padding-top: 4em;
+        padding-right: 5px;
+        padding-bottom: 4em;
+        padding-left: 5px;
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .app-creation-row
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* app creation headings */
+    .app-creation-section h1
+    {
+        font-size: 21px;
+    }
+
+    .app-creation-section h2
+    {
+        font-size: 19px;   
+    }
+
+    /* get started button */
+    .btn-get-started
+    {
+        font-size: 12px;
+    }
+}
+
+/* screen sizes that exceed iPads */
+@media (min-width: 768px)
+{
+    /* navbar essentials */
+    .navbar-toggler-icon
+    {
+        background-image: url('../assets/hamburger.svg');
+    }
+
+    /* remove navbar's border */
+    .navbar .navbar-toggler
+    {
+        border: none;
+        outline: none;
+    }
+}
+
+
+/* custom styles for iPads */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .showcase-section 
+    {
+        padding-top: 15em;
+        padding-bottom: 2em;
+        text-align: left;
+    }
+
+    .app-phone-image
+    {
+        margin-top: -90px;
+    }
+}
